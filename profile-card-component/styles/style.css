@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --darkCyan: hsl(185, 75%, 39%);
+    --darkSaturatedBlue: hsl(229, 23%, 23%);
+    --darkGreyishBlue: hsl(227, 10%, 46%);
+    --darkGrey: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--darkCyan);
+}
+
+
+.main {
+    display: grid;
+    place-items: center;
+    height: 98vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-blob, .bottom-blob {
+    position: fixed;
+}
+
+.top-blob {
+    top: -50%;
+    left: 0;
+    opacity: 0.7;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+}
+
+.bottom-blob {
+    bottom: -65%;
+    right: -10%;
+    opacity: 0.8;
+    z-index: -1;
+    width: 60%;
+    height: 120%;
+    
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 14px;
+  position: relative;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 65px;
+    margin-bottom: 20px;
+
+}
+
+.age, .city {
+    color: var(--darkGrey);
+}
+
+.user-image {
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    top: 90px;
+}
+
+.city {
+font-size: 14px;
+}
+
+.name {
+    color: var(--darkSaturatedBlue);
+    font-weight: 700;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem;
+    border-top: 1px solid #eee;
+
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.footer-heading {
+    font-weight: 700;
+    color: var(--darkSaturatedBlue);
+}
+
+.footer-secondary {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--darkGrey);
+}
+
+
+@media only screen and (max-width: 376px) {
+
+}
