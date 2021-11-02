@@ -1,4 +1,4 @@
-Frontend Mentor Challenge #1
+Frontend Mentor Challenge #2
 
 My solution: https://xhuljanoduli.github.io/frontend-mentor/stats-preview-card-component/index.html
 
