@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --primary: hsl(300, 43%, 22%);
+    --pink: hsl(333, 80%, 67%);
+    --grey: hsl(303, 10%, 53%);
+    --lightGrey: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+}
+
+
+.main {
+    display: grid;
+    place-items: center;
+    min-height: 98vh;
+    padding: 3rem;
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+.heading {
+    width: 40%;
+}
+
+.hero-heading {
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-paragraph {
+    color: var(--grey);
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.rating {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    min-width: 500px;
+    background-color: hsla(300, 43%, 22%, 0.082);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.rating:nth-of-type(1){
+    margin-right: 7rem;
+}
+.rating:nth-of-type(2){
+    margin-right: 4rem;
+}
+.rating:nth-of-type(3){
+    margin-right: 1rem;
+}
+
+.cards-container {
+    
+}
+
+@media only screen and (max-width: 376px) {
+
+}
