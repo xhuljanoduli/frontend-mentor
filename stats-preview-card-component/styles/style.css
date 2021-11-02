@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    min-height: 95vh;
+}
+
+img { 
+    vertical-align:bottom
+}
+
+.card {
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    max-width: 1200px;
+    justify-content: space-between;
+    border-radius: 6px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.card-left-column {
+    padding: 3rem;
+    padding-right: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 500px;
+}
+
+.hero-heading {
+    margin-bottom: 20px;
+}
+
+.card-text {
+    line-height: 1.5;
+}
+
+.card-text, .detail-heading {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.detail-heading {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.details-companies {
+    font-size: 20px;
+}
+
+.card-details {
+    display: flex;
+    gap: 50px;
+    font-weight: 700;
+    margin-top: 45px;
+}
+
+.text-highlight {
+    color: hsl(277, 64%, 61%);
+}
+
+.hero-img {
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+}
+
+.background-color {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: hsl(277, 74%, 36%);
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.card-right-column {
+    position: relative;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        min-height: auto;
+    }
+    .hero-img {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        object-fit: fill;
+    }
+    main {
+        width: 100%;
+        padding: 5rem 1.5rem;
+
+    }
+    .card {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      /* max-width: 480px; */
+      flex-direction: column-reverse;
+    
+    }
+
+    .hero-img {
+        height: 300px;
+    }
+    .card-text {
+        padding: 0rem 4.5rem;
+        line-height: 2;
+    }
+    .card-details {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .card-left-column {
+        padding: 0.7rem;
+        
+        padding-top: 2.5rem;
+    }
+    .card-right-column {
+        width: 100%;
+    }
+    
+  }
