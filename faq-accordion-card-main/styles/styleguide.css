@@ -33,7 +33,7 @@ body {
     border-radius: 20px;
     max-width: 1000px;
     position: relative;
-    min-height: 500px;
+    min-height: 550px;
     overflow: visible;
     background-image: url('../images/bg-pattern-desktop.svg');
     background-position: -600px 65%;
@@ -55,12 +55,13 @@ body {
 
 .box {
     position: absolute;
-    top: 42%;
+    top: 40%;
     left: -18%;
 }
 
 .card__right-column {
     padding: 3rem;
+    padding-top: 6rem;
     padding-right: 5rem;
     width: 100%;
     min-width: 500px;
