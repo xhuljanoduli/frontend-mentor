@@ -141,9 +141,9 @@ body {
         width: auto;
         max-width: auto;
         background-image: url('../images/bg-pattern-mobile.svg');
-        background-position: center 0%;
+        background-position: center 1%;
         background-repeat: no-repeat;
-        background-size: 70%;
+        background-size: 320px;
     }
     .images-container {
         display: flex;
@@ -168,8 +168,8 @@ body {
     }
     .box {
         position: absolute;
-        top: 1%;
-        left: -18%;
+        top: -4%;
+        left: -22%;
         width: 100%;
         height: auto;
         transform: scale(0.3);
