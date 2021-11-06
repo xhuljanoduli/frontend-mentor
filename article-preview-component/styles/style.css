@@ -190,11 +190,12 @@ body {
 @media only screen and (max-width: 800px) {
     .main {
         padding: 1rem;
+        align-items: start;
     }
     
     .card {
         flex-direction: column;
-        
+        background-color: #fff;
     }
     .card-content {
         margin-left: 0rem;
