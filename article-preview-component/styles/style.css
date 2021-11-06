@@ -23,7 +23,7 @@ body {
 .main {
     display: grid;
     place-items: center;
-    min-height: 98vh;
+    min-height: 95vh;
 }
 
 .card {
@@ -123,8 +123,8 @@ body {
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    top: -4.2rem;
-    left: -5.8rem;
+    top: 0;
+    left: -15rem;
     background-color: var(--primary);
     padding: 14px 32px;
     border-radius: 10px;
@@ -164,6 +164,8 @@ body {
 .show-dropdown {
     visibility: visible;
     opacity: 1;
+    top: -4.2rem;
+    left: -5.8rem;
 }
 
 
