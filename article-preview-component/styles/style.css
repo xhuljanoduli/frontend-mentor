@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+    --primary: hsl(217, 19%, 35%);
+    --secondary: hsl(214, 17%, 51%);
+    --tertiary: hsl(212, 23%, 69%);
+    --quaternary: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 13px;
+    background-color: var(--quaternary);
+    font-family: 'Manrope', sans-serif;
+}
+
+
+.main {
+    display: grid;
+    place-items: center;
+    min-height: 98vh;
+}
+
+.card {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0px 6px 24px rgba(81, 104, 139, 0.15);
+    border-radius: 10px;
+    max-width: 670px;
+    
+}
+
+.drawer-image {
+    vertical-align: bottom; /* hide the white line at the bottom of image */
+    clip-path: polygon(0 0, 81% 0, 81% 100%, 0% 100%); /* clip the image for the desirable effect */
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+    margin-left: -1rem;
+}
+
+.heading {
+    color: var(--primary);
+    font-size: 1.2rem;
+    padding-right: 2.4rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.card-paragraph {
+    color: var(--secondary);
+    padding-right: 2.4rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    padding-right: 2.4rem;
+}
+
+.author-info {
+    display: flex;
+    gap:0.8rem;
+    align-items: center;
+}
+
+.author-avatar{
+    border-radius: 50%;
+}
+
+.author-name{
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.card-date {
+    color: var(--tertiary);
+}
+
+.share-btn {
+    border: none;
+    border-radius: 50%;
+    padding: 0.4rem;
+    cursor: pointer;
+    transition: 180ms ease-in-out;
+}
+
+.share-btn:hover {
+    background-color: var(--secondary);
+}
+.share-btn:hover path {
+    fill: white;
+}
+
+.share-btn.active {
+    background-color: var(--secondary);
+}
+.share-btn.active path {
+    fill: white;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -4.2rem;
+    left: -5.8rem;
+    background-color: var(--primary);
+    padding: 14px 32px;
+    border-radius: 10px;
+    color: var(--tertiary);
+    letter-spacing: 5px;
+    font-size: 10px;
+    font-weight: 500;
+    transition: opacity 330ms ease-in-out;
+    box-shadow: 0px 4px 8px rgba(81, 104, 139, 0.15);
+}
+
+.dropdown-menu:after {
+    content: "";
+    width: 0; 
+    height: 0;
+    position: absolute;
+    left: 38%;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    border-top: 22px solid var(--primary);
+}
+
+.share-items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--tertiary);
+    font-size: 0.8rem;
+}
+
+.show-dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .main {
+        padding: 1rem;
+    }
+    
+    .card {
+        flex-direction: column;
+        
+    }
+    .card-content {
+        margin-left: 0rem;
+        padding-top: 0;
+        margin-top: -1rem;
+        gap: 1.2rem;
+    }
+    
+    .drawer-image {
+        width: 100%;
+        height: 300px;
+        clip-path: polygon(0 0, 100% 0, 100% 83%, 0 83%);
+    }
+    .small-width .dropdown-menu:after {
+        display: none;
+    }
+    .small-width .dropdown-menu {
+        top: auto;
+        left: auto;
+        position: relative;
+        height: 68px;
+        width: 100%;
+        padding: 24px 32px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .small-width .dropdown {
+        width: 100%;
+    }
+
+    .heading {
+        color: var(--primary);
+        font-size: 1.1rem;
+        padding: 2rem;
+        margin-left: 0rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        /* margin-top: -rem; */
+    }
+    .card-footer {
+        padding: 1rem 2rem ;
+    }
+
+    .card-paragraph {
+        color: var(--secondary);
+        padding: 0 2rem;
+        margin-left: 0rem;
+        padding-top: 0;
+    }
+    .small-width .card-footer {
+        width: 100%;
+        padding: 0;
+    }
+    .small-width .author-info {
+        display: none;
+    }
+    .small-width .share-btn {
+        position: absolute;
+        right: 2rem;
+        z-index: 10;
+        top: 1rem;
+    }
+}
