@@ -134,6 +134,7 @@ body {
     font-weight: 500;
     transition: opacity 330ms ease-in-out;
     box-shadow: 0px 4px 8px rgba(81, 104, 139, 0.15);
+
 }
 
 .dropdown-menu:after {
@@ -155,10 +156,23 @@ body {
     align-items: center;
 }
 
+.share-item {
+    transition: transform 180ms ease-in-out;
+}
+
+.link:hover {
+    color: var(--quaternary);
+}
+
+.share-item:hover {
+    transform: scale(1.2);
+}
+
 .link {
     text-decoration: none;
     color: var(--tertiary);
     font-size: 0.8rem;
+    transition: color 180ms ease-in-out;
 }
 
 .show-dropdown {
@@ -167,6 +181,9 @@ body {
     top: -4.2rem;
     left: -5.8rem;
 }
+
+
+
 
 
 @media only screen and (max-width: 800px) {
