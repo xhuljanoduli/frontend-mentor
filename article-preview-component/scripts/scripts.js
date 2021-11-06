@@ -3,7 +3,7 @@ const dropdownBtn = document.querySelector(".dropdown-button");
 const card = document.querySelector(".card");
 
 dropdownBtn.addEventListener("click", function () {
-    console.log(dropdown.style.visibility)
+
     if (dropdown.classList.contains('show-dropdown')) {
         dropdown.classList.remove("show-dropdown");
         card.classList.remove("small-width")
@@ -15,4 +15,13 @@ dropdownBtn.addEventListener("click", function () {
 
     }
 });
+
+window.onclick = function (event) {
+    if (!event.target.matches('.dropdown-button')) {
+        console.log(event.target)
+        dropdown.classList.remove("show-dropdown");
+        card.classList.remove("small-width")
+        dropdownBtn.classList.remove("active");
+    }
+}
 

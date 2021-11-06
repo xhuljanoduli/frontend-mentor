@@ -36,6 +36,10 @@ body {
     
 }
 
+.svg-icon {
+    pointer-events: none;
+}
+
 .drawer-image {
     vertical-align: bottom; /* hide the white line at the bottom of image */
     clip-path: polygon(0 0, 81% 0, 81% 100%, 0% 100%); /* clip the image for the desirable effect */
