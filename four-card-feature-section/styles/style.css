@@ -20,7 +20,7 @@ body {
   display: grid;
   justify-items: center;
   min-height: 95vh;
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .heading {
