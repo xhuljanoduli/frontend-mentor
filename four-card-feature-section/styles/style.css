@@ -28,7 +28,7 @@ body {
   flex-direction: column;
   text-align: center;
   gap: 2rem;
-  max-width: 32vw;
+  max-width: 36vw;
 }
 
 .main-heading {
@@ -74,7 +74,7 @@ body {
   padding: 40px 28px;
   border-radius: 6px;
   background-color: #fff;
-  box-shadow: 0px 14px 15px 0px rgba(58, 83, 104, 0.2);
+  box-shadow: 0px 14px 15px 0px rgba(58, 83, 104, 0.15);
 }
 
 .supervisor-card {
