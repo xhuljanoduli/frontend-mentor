@@ -16,14 +16,14 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ## Overview
 
+### Links
+
+- Solution URL: [https://github.com/xhuljanoduli/frontend-mentor/tree/main/four-card-feature-section](https://github.com/xhuljanoduli/frontend-mentor/tree/main/four-card-feature-section)
+- Live Site URL: [https://xhuljanoduli.github.io/frontend-mentor/four-card-feature-section/index.html](https://xhuljanoduli.github.io/frontend-mentor/four-card-feature-section/index.html)
+
 ### Screenshot
 
 ![](./images/solution.png)
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ### The challenge
 
